@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+    <h2 class="text-center mt-4">Gerenciador de tarefas</h2>
+
+    <form>
+        <div class="form-group">
+            <label for="tarefa">Tarefa:</label><br>
+            <input type="text" class="form-control" id="tarefa" name="tarefa">
+        </div>
+        <div class="form-row">
+            <div class="form-group col-6">
+                <label for="data-inicio">Data início:</label><br>
+                <input type="date" class="form-control" id="data-inicio" name="data-inicio">
+            </div>
+            <div class="form-group col-6">
+                <label for="hora-inicio">Hora início:</label><br>
+                <input type="time" class="form-control" id="hora-inicio" name="hora-inicio">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-6">
+                <label for="data-termino">Data término:</label><br>
+                <input type="date" class="form-control" id="data-termino" name="data-termino">
+            </div>
+            <div class="form-group col-6">
+                <label for="hora-termino">Hora término:</label><br>
+                <input type="time" class="form-control" id="hora-termino" name="hora-termino">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="descricao">Descrição:</label><br>
+            <textarea class="form-control" id="descricao" name="descricao"></textarea>
+        </div>
+    </form>
+
+    <div class="text-center">
+        <button class="btn btn-success mb-4">Criar tarefa</button>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Tarefa</th>
+                <th scope="col">Início</th> 
+                <th scope="col">Término</th>
+                <th scope="col">Status</th>
+                <th scope="col">Alterar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pagar conta de luz</td>
+                <td>18/11/2023 às 23:59</td>
+                <td></td>
+                <td>Em atraso</td>
+                <td><button class="btn btn-warning">Alterar</button></td>
+            </tr>
+            <tr>
+                <td>Aula de inglês</td>
+                <td>20/11/2023 às 18:00</td>
+                <td>21/11/2023</td>
+                <td></td>
+                <td><button class="btn btn-warning">Alterar</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

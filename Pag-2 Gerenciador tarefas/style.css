@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+form label {
+    display: block;
+    margin: 10px 0;
+}
+
+form input[type="text"], form textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+form .date-time {
+    display: flex;
+    justify-content: space-between;
+}
+
+form .date-time input[type="date"], form .date-time input[type="time"] {
+    width: 48%;
+}
+
+@media screen and (max-width: 600px) {
+    form .date-time input[type="date"], form .date-time input[type="time"] {
+        width: 100%;
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+button {
+    background-color: #4CAF50;
+    letter-spacing: 0.02mm;
+    color: white;
+    padding: 10px 24px;
+    margin: center;
+    border: none;
+    cursor: pointer;
+    float: right;
+    border-radius: 3mm;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button.alterar {
+    background-color: rgb(255, 153, 0);
+    color: black;
+    border-radius: 3mm;
+}
