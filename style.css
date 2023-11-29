@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  width: 800px;
+  justify-content: space-between;
+}
+.image-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-container img {
+  width: 100%;
+  max-width: 300px; /* Limita o tamanho da imagem */
+}
+.form-container {
+  width: 50%;
+}
+.form-container input[type="text"], .form-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.form-container input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  margin-left: 10px; /* Adiciona margem à esquerda do botão */
+}
+
+/* Estilos para telas com largura máxima de 600px */
+@media only screen and (max-width: 600px) {
+  .container {
+      flex-direction: column;
+      width: 100%;
+  }
+  .image-container, .form-container {
+      width: 100%;
+  }
+}
+
+/* Estilos para telas com largura mínima de 600px */
+@media only screen and (min-width: 600px) {
+  .image-container {
+      justify-content: center;
+  }
+}
