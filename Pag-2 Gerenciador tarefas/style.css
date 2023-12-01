@@ -86,3 +86,26 @@ button.alterar {
     color: black;
     border-radius: 3mm;
 }
+
+
+/* tabelas de tarefas*/
+
+.table td:nth-child(1) {
+    width: 20%; /* Ajuste a porcentagem conforme necessário */
+}
+
+.table td:nth-child(2) {
+    width: 20%; /* Ajuste a porcentagem conforme necessário */
+}
+
+.table td:nth-child(3) {
+    width: 20%; /* Ajuste a porcentagem conforme necessário */
+}
+
+.table td:nth-child(4) {
+    width: 20%; /* Ajuste a porcentagem conforme necessário */
+}
+
+.table td:nth-child(5) {
+    width: 20%; /* Ajuste a porcentagem conforme necessário */
+}
